@@ -1,0 +1,68 @@
+#quote-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 10rem auto;
+  padding: 3rem;
+  border-radius: 25px;
+}
+
+#text {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#author {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-media > a {
+  margin-right: 0.5rem;
+  background: #0059ff;
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.social-media > a:hover {
+  opacity: 0.9;
+}
+
+.social-media > a img {
+  width: 1.5rem;
+}
+
+#new-quote {
+  background: #0059ff;
+  border: none;
+  color: #12355b;
+  padding: 0.7rem 1rem;
+  font-size: 1.9rem;
+  font-weight: bold;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 0.1rem rgba(0, 0, 0, 0.45);
+}
+
+#new-quote:active {
+  transform: tranlate(0, 0.1rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+#new-quote:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 700px) {
+  #new-quote {
+    margin-top: 20px;
+  }
+  #quote-box {
+    margin-top: 120px;
+  }
+}

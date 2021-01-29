@@ -1,0 +1,26 @@
+.todo-text {
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.task-container {
+  width: 40vw;
+  margin: 10px;
+  padding: 2px;
+  background-color: #1488cc;
+  border-radius: 20px;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
+  font-weight: bold;
+}
+
+.x-button {
+  margin-right: 10px;
+}
