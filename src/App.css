@@ -8,6 +8,8 @@
   width: 30vw;
   max-height: 560px;
   overflow-y: auto;
+  overflow-x: hidden;
+  min-width: 320px;
 }
 
 .add-form {
@@ -19,6 +21,7 @@
   left: 5%;
   top: 30%;
   width: 30vw;
+  min-width: 320px;
 }
 
 @media (max-width: 700px) {
