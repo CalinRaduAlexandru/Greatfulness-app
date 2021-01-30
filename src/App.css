@@ -1,7 +1,7 @@
 .container2 {
   position: absolute;
   left: 5%;
-  top: 36%;
+  top: 40%;
   background-color: rgba(7, 21, 36, 0.6);
   padding: 40px;
   border-radius: 25px;
@@ -20,7 +20,7 @@
   border-radius: 25px;
   padding: 7px;
   left: 3%;
-  top: 26%;
+  top: 29%;
   width: 44vw;
   min-width: 360px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 1);
@@ -31,14 +31,14 @@
     width: 90vw;
     padding: 10px;
     margin-top: 20px;
-    max-height: 330px;
+    max-height: 50vh;
     top: 42%;
     overflow-y: scroll;
   }
   .add-form {
     width: 90vw;
     left: 5%;
-    top: 33%;
+    top: 30%;
     background-color: rgba(38, 96, 158, 0.6);
     min-width: 320px;
   }
@@ -46,11 +46,16 @@
 
 @media (max-height: 540px) {
   .container2 {
-    opacity: 0;
+    top: 55%;
   }
 }
 
 @media (max-height: 785px) {
+  .landscape4 {
+    opacity: 0;
+  }
+}
+@media (max-width: 540px) {
   .landscape4 {
     opacity: 0;
   }
@@ -75,13 +80,13 @@ body {
   position: absolute;
   width: 40vw;
   height: 20vh;
-  top: 20%;
+  top: 23%;
 }
 
 @media (max-width: 700px) {
   .quotes {
     position: absolute;
-    top: 85%;
+    top: 88%;
     left: 5%;
     width: 90vw;
   }
@@ -92,10 +97,6 @@ body {
 
   .container {
     min-height: 630px;
-  }
-
-  .landscape3 {
-    opacity: 0.5;
   }
 }
 
@@ -163,6 +164,7 @@ body {
 .landscape1 {
   position: absolute;
   width: 70vw;
+  min-width: 533px;
   border-radius: 25px;
   height: 100px;
   background-color: #567cdc;
@@ -175,6 +177,7 @@ body {
   width: 550px;
   height: 100px;
   background-color: #3462d5;
+  border-radius: 25px;
   transform: rotate(8deg);
   top: 190px;
   left: -10px;
@@ -183,6 +186,7 @@ body {
 .landscape3 {
   position: absolute;
   width: 90vw;
+  min-width: 570px;
   height: 100px;
   border-radius: 25px;
   background-color: #2650ba;
@@ -198,6 +202,16 @@ body {
   border-radius: 25px;
   transform: rotate(0deg);
   top: 250px;
+}
+
+@media (max-width: 550px) {
+  .landscape1 {
+    width: 100vw;
+  }
+
+  .landscape4 {
+    width: 100vw;
+  }
 }
 
 /* add trees here */
@@ -272,6 +286,12 @@ body {
   clip-path: polygon(50% 0%, 22% 100%, 75% 100%);
   box-shadow: 2px 0 2px 4px rgba(0, 0, 0, 0.1);
   animation: tree6 1.3s 1 forwards 2s;
+}
+
+@media (min-width: 865px) {
+  .tree1 {
+    background-color: rgba(0, 0, 0, 0);
+  }
 }
 
 /* add stars here */
