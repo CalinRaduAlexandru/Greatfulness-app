@@ -76,6 +76,13 @@ body {
   overflow: hidden;
 }
 
+.quotes {
+  position: absolute;
+  width: 40vw;
+  height: 20vh;
+  top: 24.5%;
+}
+
 @media (max-width: 700px) {
   .quotes {
     position: absolute;
