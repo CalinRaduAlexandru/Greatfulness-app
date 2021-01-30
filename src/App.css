@@ -1,7 +1,7 @@
 .container2 {
   position: absolute;
   left: 5%;
-  top: 38%;
+  top: 36%;
   background-color: rgba(7, 21, 36, 0.6);
   padding: 40px;
   border-radius: 25px;
@@ -20,7 +20,7 @@
   border-radius: 25px;
   padding: 7px;
   left: 3%;
-  top: 30%;
+  top: 26%;
   width: 44vw;
   min-width: 360px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 1);
@@ -38,9 +38,21 @@
   .add-form {
     width: 90vw;
     left: 5%;
-    top: 35%;
+    top: 33%;
     background-color: rgba(38, 96, 158, 0.6);
     min-width: 320px;
+  }
+}
+
+@media (max-height: 540px) {
+  .container2 {
+    opacity: 0;
+  }
+}
+
+@media (max-height: 785px) {
+  .landscape4 {
+    opacity: 0;
   }
 }
 
@@ -63,7 +75,7 @@ body {
   position: absolute;
   width: 40vw;
   height: 20vh;
-  top: 10%;
+  top: 20%;
 }
 
 @media (max-width: 700px) {
@@ -80,10 +92,6 @@ body {
 
   .container {
     min-height: 630px;
-  }
-
-  .landscape4 {
-    opacity: 0;
   }
 
   .landscape3 {
@@ -154,7 +162,8 @@ body {
 
 .landscape1 {
   position: absolute;
-  width: 550px;
+  width: 70vw;
+  border-radius: 25px;
   height: 100px;
   background-color: #567cdc;
   transform: rotate(-8deg);
@@ -173,8 +182,9 @@ body {
 
 .landscape3 {
   position: absolute;
-  width: 550px;
+  width: 90vw;
   height: 100px;
+  border-radius: 25px;
   background-color: #2650ba;
   transform: rotate(-4deg);
   top: 210px;
@@ -182,13 +192,12 @@ body {
 
 .landscape4 {
   position: absolute;
-  width: 570px;
+  width: 100vw;
   height: 100px;
   background-color: #1f4298;
   border-radius: 25px;
   transform: rotate(0deg);
   top: 250px;
-  left: -10px;
 }
 
 /* add trees here */
