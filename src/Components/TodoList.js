@@ -4,7 +4,7 @@ import Todo from "./Todo/Todo";
 function TodoList({ todos, deleteTodo, crossCompleteTodo, highlightTodo }) {
   return (
     <div>
-      {todos.reverse().map((todo) => {
+      {todos.map((todo) => {
         return (
           <Todo
             key={todo.id}

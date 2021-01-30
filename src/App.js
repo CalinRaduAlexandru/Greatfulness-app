@@ -19,7 +19,7 @@ function App() {
   }, [todos]);
 
   function addTodo(todo) {
-    setTodos([...todos, todo]);
+    setTodos([todo, ...todos]);
   }
 
   function deleteTodo(id) {

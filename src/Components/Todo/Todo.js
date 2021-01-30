@@ -34,7 +34,9 @@ function Todo({ todo, deleteTodo, crossCompleteTodo, highlightTodo }) {
           className="todo-text"
           style={{
             textDecoration: todo.completed ? "underline" : null,
-            backgroundColor: todo.highlighted ? "#2b32b2" : null,
+            backgroundColor: todo.highlighted
+              ? "rgba(255, 255, 255, 0.35"
+              : null,
           }}
         >
           {todo.task}
