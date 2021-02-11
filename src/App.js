@@ -7,11 +7,32 @@ import Quotes from "./Components/Quotes/Quotes";
 const TODO_STORAGE_KEY = "todo-storage-key";
 
 function App() {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState([
+    {
+      id: "1",
+      task: "That you are here to see this app",
+      completed: false,
+      highlighted: false,
+    },
+    {
+      id: "2",
+      task: "That we might collaborate",
+      completed: false,
+      highlighted: false,
+    },
+    {
+      id: "3",
+      task: "For being a better programmer each day",
+      completed: false,
+      highlighted: false,
+    },
+  ]);
 
   useEffect(() => {
-    const storageTodos = JSON.parse(localStorage.getItem(TODO_STORAGE_KEY));
-    if (storageTodos) setTodos(storageTodos);
+    const storageGratefulList = JSON.parse(
+      localStorage.getItem(TODO_STORAGE_KEY)
+    );
+    if (storageGratefulList) setTodos(storageGratefulList);
   }, []);
 
   useEffect(() => {
@@ -56,25 +77,28 @@ function App() {
 
   return (
     <div className="App">
-      <div className="add-form">
-        <TodoForm addTodo={addTodo} />
-      </div>
-      <div className="container2">
-        <TodoList
-          todos={todos}
-          deleteTodo={deleteTodo}
-          crossCompleteTodo={crossCompleteTodo}
-          highlightTodo={highlightTodo}
-        />
-      </div>
-      <div className="container">
+      <div className="app-container">
+        <div className="form-todo-list">
+          <div className="todo-container">
+            <TodoList
+              todos={todos}
+              deleteTodo={deleteTodo}
+              crossCompleteTodo={crossCompleteTodo}
+              highlightTodo={highlightTodo}
+            />
+          </div>
+        </div>
         <div className="disc1"></div>
         <div className="disc2"></div>
         <div className="disc3"></div>
         <div className="landscape1"></div>
         <div className="landscape2"></div>
         <div className="landscape3"></div>
-        <div className="landscape4"></div>
+        <div className="landscape4">
+          <div className="add-form">
+            <TodoForm addTodo={addTodo} />
+          </div>
+        </div>
         <div className="tree1"></div>
         <div className="tree2"></div>
         <div className="tree3"></div>
