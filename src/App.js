@@ -17,14 +17,14 @@ function App() {
     {
       id: "2",
       task: "That we might collaborate",
-      completed: false,
+      completed: true,
       highlighted: false,
     },
     {
       id: "3",
       task: "For being a better programmer each day",
       completed: false,
-      highlighted: false,
+      highlighted: true,
     },
   ]);
 

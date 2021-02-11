@@ -33,7 +33,8 @@ function TodoForm({ addTodo }) {
       }}
     >
       <TextField
-        placeholder="What are you greatful for?"
+        placeholder="Reasons to be greatful"
+        id="standard-basic"
         type="text"
         onChange={handleChange}
         value={todo.task}
